@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_day_42/explicit/views/explicit_animation.dart';
 
-import 'views/widgets/widgets.dart';
+import 'implicit/views/widgets/widgets.dart';
 
 void main() {
   runApp(const MyApp());
@@ -36,6 +37,7 @@ class _MyAppState extends State<MyApp> {
         duration: const Duration(seconds: 1),
         child: PageView(
           children: const [
+            ExplicitAnimation(),
             AnimatedAlignWidget(),
             AnimatedContainerWidget(),
             AnimatedOpacityWidget(),
